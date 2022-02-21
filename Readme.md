@@ -96,3 +96,8 @@ a particular provider already has a selection recorded in the lock file, Terrafo
 will always re-select that version for installation, even if a newer version has
 become available. You can override that behavior by adding the `-upgrade` option
 when you run `terraform init`.
+
+Terraform has the capability to output the attribute of a resource with the 
+output values. An outputted attribute can not only be used for the user for
+reference, but it can also act as an input to other resource being created
+via Terraform.
