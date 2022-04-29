@@ -101,3 +101,5 @@ Terraform has the capability to output the attribute of a resource with the
 output values. An outputted attribute can not only be used for the user for
 reference, but it can also act as an input to other resource being created
 via Terraform.
+
+We can have a central source from which we can import values from.
