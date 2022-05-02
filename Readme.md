@@ -103,3 +103,21 @@ reference, but it can also act as an input to other resource being created
 via Terraform.
 
 We can have a central source from which we can import values from.
+
+Variables can be assigned values in multiple ways. For example:
+* Environment variables
+  * Define a global variable using a prefix `TF_VAR_myVariableName="t2.nano"`
+* Command line flags `terraform plan -var="myVariableName=t2.small"`
+* From a file
+  * Create a `.tfvars` file. If it's set to `terraform.tfvars`, then it gets read
+  by default. If something else, then you have to explicitly define the name to read.
+  `terraform plan -var-file="customVarsFile.tfvars"`
+  * Add key, value pairs in there `myVariableName="t2.large"`
+* Variable defaults ````variable "myVariableName" { default = "t2.micro" }````
+
+If no value is provided, then when triggering TF it will ask for the value of
+variable via command prompt.
+
+Generally a variables file is defined for default values. E.g. `variables.tf` 
+that contains the default assignments `default = ...`. Also, a `.tfvars` file is
+defined for default overrides.
