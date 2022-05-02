@@ -121,3 +121,16 @@ variable via command prompt.
 Generally a variables file is defined for default values. E.g. `variables.tf` 
 that contains the default assignments `default = ...`. Also, a `.tfvars` file is
 defined for default overrides.
+
+A type argument can be used in a variable block to restrict the variable to a
+certain type. If no type is set then it gets set to an any type.
+```
+variable "someVariableName" {
+     type = string
+}
+```
+Example list of types:
+* string - "hello"
+* list - ["tomato", "biscuit"], 0 indexed
+* map - {name = "Mabel", age = 420}
+* number - 69
