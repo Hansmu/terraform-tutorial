@@ -138,3 +138,6 @@ Example list of types:
 A count can be used to create multiple resources of the same configuration. You simply
 add the count property to a resource. Where count is set, an additional count object
 is available in expressions.
+
+A local value assigns a name to an expression, so you can use the name multiple 
+times within a module instead of repeating the expression.
