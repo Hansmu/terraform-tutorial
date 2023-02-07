@@ -134,3 +134,7 @@ Example list of types:
 * list - ["tomato", "biscuit"], 0 indexed
 * map - {name = "Mabel", age = 420}
 * number - 69
+
+A count can be used to create multiple resources of the same configuration. You simply
+add the count property to a resource. Where count is set, an additional count object
+is available in expressions.
