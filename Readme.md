@@ -141,3 +141,6 @@ is available in expressions.
 
 A local value assigns a name to an expression, so you can use the name multiple 
 times within a module instead of repeating the expression.
+
+Terraform contains a bunch of built-in functions to be used as helpers. The user cannot 
+define their own functions as of now.
