@@ -153,3 +153,6 @@ of the logs. This allows you to debug any issues. The logs could also be exporte
 seeing it in the console by using TF_LOG_PATH.
 
 `terraform fmt` command can be used to format the Terraform configuration files.
+
+`terraform validate` command validates syntactic validity. It can check various aspects like
+unsupported arguments, undeclared variables, and others.
