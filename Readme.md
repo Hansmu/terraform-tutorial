@@ -146,3 +146,8 @@ Terraform contains a bunch of built-in functions to be used as helpers. The user
 define their own functions as of now.
 
 Data sources allow data to be fetched or computed for use elsewhere in Terraform configuration.
+
+Terraform has detailed logs which can be enabled by setting the TF_LOG environment variable
+to any value. You can set it to TRACE, DEBUG, INFO, WARN, or ERROR to change the verbosity
+of the logs. This allows you to debug any issues. The logs could also be exported instead of
+seeing it in the console by using TF_LOG_PATH.
