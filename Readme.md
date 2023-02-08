@@ -144,3 +144,5 @@ times within a module instead of repeating the expression.
 
 Terraform contains a bunch of built-in functions to be used as helpers. The user cannot 
 define their own functions as of now.
+
+Data sources allow data to be fetched or computed for use elsewhere in Terraform configuration.
