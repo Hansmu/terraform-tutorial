@@ -151,3 +151,5 @@ Terraform has detailed logs which can be enabled by setting the TF_LOG environme
 to any value. You can set it to TRACE, DEBUG, INFO, WARN, or ERROR to change the verbosity
 of the logs. This allows you to debug any issues. The logs could also be exported instead of
 seeing it in the console by using TF_LOG_PATH.
+
+`terraform fmt` command can be used to format the Terraform configuration files.
