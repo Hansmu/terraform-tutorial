@@ -156,3 +156,8 @@ seeing it in the console by using TF_LOG_PATH.
 
 `terraform validate` command validates syntactic validity. It can check various aspects like
 unsupported arguments, undeclared variables, and others.
+
+Terraform generally loads all the configuration files within the directory specified in 
+alphabetical order. Though, this doesn't mean that things are not accessible in files that
+come later on alphabetically. Simply loads it in and then validates and executes. 
+The files loaded must end in either .tf or .tf.json to specify the format that is in use.
