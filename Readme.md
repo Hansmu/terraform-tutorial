@@ -178,3 +178,6 @@ As `terraform taint` is deprecated, then for Terraform v0.15.2 and later,
 it is recommended using the -replace option with terraform apply instead. 
 When you use terraform taint, other users could create a new plan against 
 your tainted object before you can review the effects.
+
+A splat expression. The special [*] symbol iterates over all the elements of the list given to 
+its left and accesses from each one the attribute name given on its right.
