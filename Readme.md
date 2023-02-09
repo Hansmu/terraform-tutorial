@@ -167,3 +167,14 @@ dynamically construct repeatable nested blocks like setting using a special dyna
 block type, which is supported inside resource, data, provider, and provisioner 
 blocks. A dynamic block acts much like a for expression, but produces nested blocks 
 instead of a complex typed value.
+
+(deprecated) `terraform taint` command informs Terraform that a particular object 
+has become degraded or damaged. Terraform represents this by marking the object 
+as "tainted" in the Terraform state, and Terraform will propose to replace it 
+in the next plan you create. This could be the cause of users making a ton of 
+manual changes.
+
+As `terraform taint` is deprecated, then for Terraform v0.15.2 and later, 
+it is recommended using the -replace option with terraform apply instead. 
+When you use terraform taint, other users could create a new plan against 
+your tainted object before you can review the effects.
