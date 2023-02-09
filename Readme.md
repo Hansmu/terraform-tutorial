@@ -161,3 +161,9 @@ Terraform generally loads all the configuration files within the directory speci
 alphabetical order. Though, this doesn't mean that things are not accessible in files that
 come later on alphabetically. Simply loads it in and then validates and executes. 
 The files loaded must end in either .tf or .tf.json to specify the format that is in use.
+
+The dynamic block allows for building multiple blocks with differing values. You can 
+dynamically construct repeatable nested blocks like setting using a special dynamic 
+block type, which is supported inside resource, data, provider, and provisioner 
+blocks. A dynamic block acts much like a for expression, but produces nested blocks 
+instead of a complex typed value.
