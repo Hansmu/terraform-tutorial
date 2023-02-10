@@ -187,3 +187,6 @@ a configuration or execution plan. The output is in the DOT format, which can be
 used by GraphViz to generate charts.
 
 ![Terraform graph example](images/graph-example.png)
+
+Using the `terraform output <outputBlockName>` can be used to get the output block values
+from the command line.
