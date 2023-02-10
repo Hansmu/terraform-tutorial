@@ -190,3 +190,8 @@ used by GraphViz to generate charts.
 
 Using the `terraform output <outputBlockName>` can be used to get the output block values
 from the command line.
+
+The `terraform` block can be used to set terraform specific configuration. For example, 
+you can require the minimum version for Terraform. It also defines the providers that it
+requires. So you provide the provider version and source via the `required_providers` block. 
+Anything more specific you use the `provider` block.
