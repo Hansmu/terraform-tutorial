@@ -181,3 +181,9 @@ your tainted object before you can review the effects.
 
 A splat expression. The special [*] symbol iterates over all the elements of the list given to 
 its left and accesses from each one the attribute name given on its right.
+
+The `terraform graph` command is used to generate a visual representation of either 
+a configuration or execution plan. The output is in the DOT format, which can be 
+used by GraphViz to generate charts.
+
+![Terraform graph example](images/graph-example.png)
